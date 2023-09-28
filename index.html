@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Dictionary web app</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- MENU-->
+    <div class="menu">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 34 38"><g fill="none" fill-rule="evenodd" stroke="#838383" stroke-linecap="round" stroke-width="1.5"><path d="M1 33V5a4 4 0 0 1 4-4h26.8A1.2 1.2 0 0 1 33 2.2v26.228M5 29h28M5 37h28"/><path stroke-linejoin="round" d="M5 37a4 4 0 1 1 0-8"/><path d="M11 9h12"/></g>
+      </svg>
+
+
+      <div class="theme-selector">
+
+        <div class="rightMenu">
+          <button class="dropbtn"><p id="dropbtn-lable">Sans-Serif</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"><path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6"/></svg>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <button class="font-button" id="Sans-Serif">Sans Serif</button>
+            <button class="font-button" id="Serif">Serif</button>
+            <button class="font-button" id="Mono">Mono</button>
+          </div>
+        </div>
+        
+          <input type="checkbox" id="check" class="toggle"/>
+          <label for="check"></label>
+          
+          <svg viewBox="0 0 22 22" class="moon-icon" width="22" height="22">
+            <path fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z"/>
+          </svg>         
+      </div>
+
+    </div>
+
+    <div class="search-container">
+      <form action="" class ="search-form">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search for any word..." name="search" data-search= "" class="search-bar" aria-label="">
+          <input type="submit" value="" class="search-button">
+        </div>
+      </form>
+    </div>
+
+    <!-- DICTIONARY API -->
+
+    <div class="dictionary-container">
+      
+      <div id="word-display">
+      </div>
+
+        <div id="pronunciation-display">
+        </div>
+
+        <div id="noun-display">
+          <div id="noun-meaning">
+          </div>
+        </div>
+
+        <div id="synonym-display">
+        </div>
+
+        <div id="verb-display">
+          <div id="verb-meaning">
+          </div>
+        </div>
+
+        <div id="source-display">
+        </div>
+
+  </div>
+
+</body>
+</html>
